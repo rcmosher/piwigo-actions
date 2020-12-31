@@ -12,6 +12,6 @@ sessionCookiePath="$2"
 curl \
 	-c $sessionCookiePath -b $sessionCookiePath "$baseUrl/?act=logout" -s \
 	--compressed \
-	-H "Referer: $baseUrl" \
+	-H "Referer: $baseUrl"
 
 rm "$sessionCookiePath"

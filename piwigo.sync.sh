@@ -9,7 +9,7 @@ basedir=$(dirname "$0")
 baseUrl=$1
 sessionCookiePath="$2"
 siteId=${3:-'1'} # default to '1' if $3 is not set
-simulate=${4:-'0'} # default to '0' don't simulate if $4 not set
+simulate=${4:-'0'} # default to '0'-don't simulate if $4 not set
 
 curl "$baseUrl/admin.php?page=site_update&site=$siteId" \
 	-c $sessionCookiePath -b $sessionCookiePath -s \

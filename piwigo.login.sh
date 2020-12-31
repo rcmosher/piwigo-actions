@@ -14,7 +14,7 @@ sessionCookiePath="$4"
 # Access the page to generate cookie used with login
 curl "$baseUrl" \
 	-c $sessionCookiePath -b $sessionCookiePath -s \
-	--compressed \
+	--compressed
 
 # Login - note if you view the returned contents it may appear as though your're not logged in.
 curl "$baseUrl/identification.php" \
