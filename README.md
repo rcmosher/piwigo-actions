@@ -1,5 +1,6 @@
 # piwigo-actions
 Version 0.1
+
 Execute actions on your Piwigo site from the command line.
 
 ## Supported Actions
